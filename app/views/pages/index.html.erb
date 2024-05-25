@@ -1,0 +1,10 @@
+<!-- app/views/pages/index.html.erb -->
+<h1>Latest Blog Posts</h1>
+
+<% @pages.each do |page| %>
+  <div class="page-preview">
+    <h2><a href="<%= page_path(page.slug) %>"><%= page.title %></a></h2>
+    <img src="<%= page.image_url %>" alt="Page Image">
+    <p>By <%= page.author.name %></p>
+  </div>
+<% end %>

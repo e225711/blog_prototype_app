@@ -1,24 +1,42 @@
-# README
+＃ブログアプリのプロトタイプ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+このRailsアプリは、ブログサイトのプロトタイプを作成するためのものです。このアプリでは、ユーザーがブログ記事を閲覧し、最新の記事をトップページで確認できます。また、特定の記事の詳細を表示するページもあります。
 
-Things you may want to cover:
+##機能
 
-* Ruby version
+- **トップページ**：最新の10個のブログ記事が一覧表示されます。各記事にはタイトル、画像、および著者の情報が表示されます。
+- **記事の詳細ページ**：特定の記事の詳細を表示します。記事のタイトル、本文、および著者の情報が表示されます。
 
-* System dependencies
+##セットアップ
 
-* Configuration
+1. このリポジトリをクローンします。
 
-* Database creation
+   ```bash
+   git clone git@github.com:e225711/blog_prototype_app.git
+   ```
 
-* Database initialization
+2. アプリのディレクトリに移動します。
 
-* How to run the test suite
+   ```bash
+   cd blog_prototype_app
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+3. 必要なGemをインストールします。
 
-* Deployment instructions
+   ```bash
+   bundle install
+   ```
 
-* ...
+4. サーバーを起動します。
+
+   ```bash
+   rails server
+   ```
+
+5. ブラウザで `http://localhost:3000` にアクセスしてアプリを使用します。
+
+##使用技術
+
+- Ruby on Rails
+- Faker gem（ダミーデータの生成に使用）
+- HTML/CSS
